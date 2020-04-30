@@ -9,6 +9,16 @@ Dependencies:
 
 >$ sudo apt-get install xfonts-100dpi
 
+--
+python
+
+> sudo apt install python
+
+--
+csh
+
+> sudo apt install csh
+
 
 ---
 
