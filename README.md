@@ -22,3 +22,9 @@ In RedHat/CentOS, the font libraries are:
  The makefile in the main directory should compile all the programs in the subdirectories, each of which has its own makefile that you won't need to run then! To make, just type make :)
  
  *May need to ```fc-cache -vf``` (possibly sudo) for system to find new fonts*
+ 
+ ---
+ 
+ to add to path, add the line 
+ PATH=$PATH:~/Programming/mwsoft64/build/bin/xclust3
+to the end of ~/.bashrc and then restart terminal
