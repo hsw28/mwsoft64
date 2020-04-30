@@ -2,20 +2,16 @@
 *******************************************************************
 PROGRAM:
     iolib.o
-
 DESCRIPTION:
     Library routines for performing standard io functions on data files
-
 AUTHOR:
     Written by Matthew Wilson
     Massachusetts Institute of Technology
     wilson@ladyday.mit.edu
-
 DATES:
     original 9/91
     program update 6/96
     9/2012 - Updated code to run on i686 and x86_64 Stuart Layton <slayton@mit.edu>
-
 *******************************************************************
 */
 
@@ -1164,7 +1160,7 @@ int32_t System(s)
 char	*s;
 {
 int32_t pid;
-union wait status;
+int status;
 char	*argv[200];
 int32_t	cnt;
 
@@ -1205,10 +1201,10 @@ int32_t	cnt;
     if(debug){
 	printf("child process %d done. Status = %d\n",
 	pid,
-	status.w_status);
+	status);
     }
 #endif
-    return(status.w_status);
+    return(status);
 }
 
 
